@@ -4,11 +4,9 @@ import { useCookies } from "react-cookie";
 const usePostSkills = () => {
   const [, setCookie] = useCookies(["studentId"]);
   return async (studentId, skills) => {
+    console.log("skills: ", skills)
     try {
-      await axios.post(`https://api.projectszero.tech/skills/${studentId}`, {
-        skill: skills,
-        thisIsDefinitelyWrong: true
-      });
+      await axios.post(`https://api.projectszero.tech/skills/${studentId}`, skills);
       setCookie("studentId", studentId);
       alert("送出成功");
     } catch (error) {

@@ -77,3 +77,6 @@ export const chartColors = {
     dark: `rgba(${hexToRGB(tailwindConfig().theme.colors.slate[900])}, 0.24)`
   }
 };
+
+// Export as a default export
+export default chartColors;

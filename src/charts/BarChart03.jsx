@@ -180,7 +180,7 @@ function BarChart03({ data, width, height }) {
         <ul
           ref={legend}
           className="text-sm divide-y divide-slate-100 dark:divide-slate-700"
-         />
+        />
         <ul className="text-sm divide-y divide-slate-100 dark:divide-slate-700" />
       </div>
     </div>

@@ -15,7 +15,7 @@ import { chartColors } from "./ChartjsConfig";
 import "chartjs-adapter-moment";
 
 // Import utilities
-import { formatValue } from "../utils/Utils";
+// import { formatValue } from "../utils/Utils";
 
 Chart.register(
   LineController,

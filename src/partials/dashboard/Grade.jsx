@@ -36,11 +36,14 @@ export const options = {
 
 function Grade() {
   const { labels, values } = useGradeStats();
+
+  // Define the label text
+  const labelText = "學生人數";
   const data = {
     labels,
     datasets: [
       {
-        label: "學生人數",
+        label: labelText,
         data: values,
         backgroundColor: tailwindConfig().theme.colors.orange[500]
       }
